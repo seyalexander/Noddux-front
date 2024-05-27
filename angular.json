@@ -90,6 +90,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/noddux-front",
+            "netlifyToken": "edwin$2023*",
+            "siteId": ""
+          }
         }
       }
     }
