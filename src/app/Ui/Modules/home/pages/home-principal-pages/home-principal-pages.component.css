@@ -1,0 +1,15 @@
+.home-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  & app-header {
+    height: 4rem;
+    background-color: var(--color-principal-1);
+  }
+
+  & main {
+    height: calc(100vh - 4rem);
+  }
+}

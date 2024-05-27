@@ -1,0 +1,129 @@
+.dashboard_container {
+  height: 100vh;
+  display: flex;
+  background-color: #fff;
+
+  & .dashboard-ingreso-datos {
+    flex: 0.8;
+    padding: 1.5rem 3rem 1.5rem 6rem;
+    box-sizing: border-box;
+
+    & header {
+      font-weight: 600;
+      font-size: 2rem;
+      color: var(--color-principal-1);
+      margin-bottom: 2rem;
+    }
+
+    & main {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+
+      & h1 {
+        color: var(--color-principal-1);
+        font-size: 1.5rem;
+      }
+
+      & p {
+        font-size: 1rem;
+        color: var(--color-principal-2);
+      }
+
+    }
+  }
+
+  & .dashboard-imagen-principal {
+    width: 100%;
+    flex: 1.2;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: yellow;
+
+    & img {
+      width: 60vw;
+      height: 125vh;
+      object-fit: cover;
+      object-position: top right;
+    }
+  }
+}
+
+
+
+
+/* Escritorio extra grande */
+@media only screen and (min-width: 1200px){
+
+}
+/* Escritorio grande */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+/* Tablets y phablets */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+
+}
+
+/* Teléfonos */
+@media only screen and (max-width: 575px){
+  .dashboard_container {
+
+    & .dashboard-ingreso-datos {
+      flex: 1;
+      padding: 1rem;
+      position: absolute;
+      z-index: 1;
+
+      & header {
+        font-weight: 600;
+        font-size: 2rem;
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+
+      & main {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        & h1 {
+          color:#fff;
+          font-size: 1.2rem;
+        }
+
+        & p {
+          font-size: .8rem;
+          color: #fff;
+        }
+
+        & app-auth-datos {
+          background-color: #fff;
+          border-radius: 6px;
+          padding: .2rem .4rem;
+        }
+      }
+    }
+
+    & .dashboard-imagen-principal {
+      width: 100%;
+      flex: 1;
+      overflow: hidden;
+      box-sizing: border-box;
+
+      & img {
+        width: 100%;
+        height: 130vh;
+      }
+    }
+  }
+
+
+}

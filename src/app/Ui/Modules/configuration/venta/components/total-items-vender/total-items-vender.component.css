@@ -1,0 +1,35 @@
+.total-ventas-container {
+  height: 100%;
+  background-color: #ddecff;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 2rem;
+
+  & a {
+    color: #264B78;
+    font-weight: 600;
+  }
+
+  & button {
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    color: #264B78;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+
+    & span {
+      font-weight: 600;
+      text-decoration: underline;
+    }
+  }
+
+  & h4 {
+    color: #264B78;
+    font-size: 1.2rem;
+  }
+}

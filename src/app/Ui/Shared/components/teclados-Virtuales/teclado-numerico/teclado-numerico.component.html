@@ -1,0 +1,12 @@
+<div class="teclado-container">
+  @for (item of this.opciones.valores; track $index) {
+    <div class="grupo-numeros">
+      @for (item of item.valores; track $index) {
+        <app-button-teclado-virtual
+        [descripcion]="item.name"
+        [valor]="item.value"
+        [icono]="item.icon" />
+      }
+    </div>
+  }
+</div>

@@ -1,0 +1,17 @@
+<div class="lista-productos-venta-container">
+  <div class="tipo-documento-container"></div>
+  <div class="lista-productos-venta">
+    <header class="lista-productos">
+      <h4>Cant.</h4>
+      <h4>Producto</h4>
+      <h4>Precio</h4>
+    </header>
+    <ul>
+      @for (item of listaItems; track $index) {
+        <li>
+           <app-items-listado-items-vender />
+        </li>
+      }
+    </ul>
+  </div>
+</div>
